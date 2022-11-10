@@ -1,0 +1,61 @@
+<html>
+    <head>objects and functions</head>
+    <body>
+        <script>
+            function check(){
+                alert("hai");
+            }
+            console.log(check());
+
+            let check1=function(){
+                alert("hi");
+            };
+            check1();
+//function inside the object
+            let user={
+                check3(){
+                    alert("this is ramya");
+                },
+                check4(){
+                    alert("ramya gopalakrishnan")
+                }
+            }
+            user.check3();
+            user.check4();
+//function creating inside the array
+            let arr=[function() {alert("hais")}];//empty
+            alert(arr[0].name);
+//length property
+            function f1(a){};
+            function f2(a,b){};
+            function f3(a,b,c,d,e,f){};
+        console.log(f1.length);
+        console.log(f2.length);
+        console.log(f3.length);
+custom properties
+            function check5(){
+                alert("hai dude");
+                count=count+1;
+
+            }
+            count=0;
+            check5();
+            check5();
+            check5();
+            check5();
+            check5();
+        alert(`called ${count} times`);
+//named function expression
+            let check6=function(who){
+                alert(`hello, ${who}`);
+            };
+            check6("ramya");
+            
+
+            let check7=function f(who){
+                alert(`hello, ${who}`);
+            };
+            check7("ram");
+        </script>
+    </body>
+</html>
